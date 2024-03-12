@@ -1,0 +1,4 @@
+flask
+gunicorn
+google-cloud-datastore
+flask_session

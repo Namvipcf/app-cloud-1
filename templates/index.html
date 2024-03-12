@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div id="message"></div>
+    <table>
+        <tr>
+            <td data-cell="1"></td>
+            <td data-cell="2"></td>
+            <td data-cell="3"></td>
+        </tr>
+        <tr>
+            <td data-cell="4"></td>
+            <td data-cell="5"></td>
+            <td data-cell="6"></td>
+        </tr>
+        <tr>
+            <td data-cell="7"></td>
+            <td data-cell="8"></td>
+            <td data-cell="9"></td>
+        </tr>
+    </table>
+    <div id="buttons">
+        <button id="restart">Restart Game</button>
+        <button id="multiPlayer">Play with Friend</button>
+        <button id="singlePlayer">Play with Computer</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
